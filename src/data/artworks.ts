@@ -8,7 +8,7 @@ export const artworks: Artwork[] = [
     type: 'photo',
     dimensions: '1536 × 2048 px',
     description: 'Stopped when want crossing the street.',
-    imageUrl: '/images/artwork1.jpeg',
+    imageUrl: '/images/artwork1.JPEG',
     category: 'abstract'
   },
   {
@@ -18,7 +18,7 @@ export const artworks: Artwork[] = [
     type: 'photo',
     dimensions: '1536 × 2048 px',
     description: 'Street in the morning out of nowhere.',
-    imageUrl: '/images/artwork2.jpeg',
+    imageUrl: '/images/artwork2.JPEG',
     category: 'urban'
   },
   {
@@ -28,7 +28,7 @@ export const artworks: Artwork[] = [
     type: 'photo',
     dimensions: '1536 × 2048 px',
     description: 'Moon in the night sky.',
-    imageUrl: '/images/artwork3.jpeg',
+    imageUrl: '/images/artwork3.JPEG',
     category: 'landscape'
   },
   // {

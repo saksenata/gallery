@@ -16,9 +16,11 @@ export default function ArtworkCard({ artwork }: ArtworkCardProps) {
           <Image
             src={artwork.imageUrl}
             alt={artwork.title}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            width={400}
+            height={300}
+            className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority={false}
           />
         </div>
         <div className="p-4">

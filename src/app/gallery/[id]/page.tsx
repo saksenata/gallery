@@ -1,16 +1,17 @@
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
-import { Artwork } from '../../../types/artwork';
 import { artworks } from '../../../data/artworks';
+import Image from 'next/image';
 
 interface ArtworkPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default function ArtworkDetail({ params }: ArtworkPageProps) {
-  const artwork = artworks.find(a => a.id === params.id);
+export default async function ArtworkDetail({ params }: ArtworkPageProps) {
+  const { id } = await params;
+  const artwork = artworks.find(a => a.id === id);
 
   if (!artwork) {
     return (
@@ -19,7 +20,7 @@ export default function ArtworkDetail({ params }: ArtworkPageProps) {
         <main className="flex-grow pt-20">
           <div className="max-w-4xl mx-auto px-6 text-center py-20">
             <h1 className="text-4xl font-light text-gray-900 mb-6 tracking-wide">Artwork not found</h1>
-            <p className="text-lg text-gray-600">The artwork you're looking for doesn't exist.</p>
+            <p className="text-lg text-gray-600">The artwork you&apos;re looking for doesn&apos;t exist.</p>
           </div>
         </main>
         <Footer />
@@ -36,10 +37,13 @@ export default function ArtworkDetail({ params }: ArtworkPageProps) {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div>
                 <div className="relative aspect-[4/3] bg-gray-50 rounded-lg overflow-hidden">
-                  <img 
+                  <Image 
                     src={artwork.imageUrl} 
                     alt={artwork.title} 
+                    width={800}
+                    height={600}
                     className="object-cover w-full h-full"
+                    priority={true}
                   />
                 </div>
               </div>

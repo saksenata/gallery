@@ -1,5 +1,6 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -46,16 +47,16 @@ export default function About() {
             <div className="text-center">
               <h2 className="text-2xl font-light text-gray-900 mb-8 tracking-wide">Join Our Community</h2>
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-                Whether you're an artist looking to showcase your work or an art lover seeking inspiration, 
+                Whether you&apos;re an artist looking to showcase your work or an art lover seeking inspiration, 
                 we invite you to be part of our growing community.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
+                <Link
                   href="/gallery"
                   className="inline-flex items-center px-8 py-3 bg-gray-900 text-white hover:bg-gray-800 transition-colors rounded-full text-sm tracking-wide"
                 >
                   Explore Gallery
-                </a>
+                </Link>
                 <a
                   href="mailto:info@saksenata.art"
                   className="inline-flex items-center px-8 py-3 border border-gray-300 text-gray-700 bg-white hover:bg-gray-50 transition-colors rounded-full text-sm tracking-wide"
