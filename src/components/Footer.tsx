@@ -16,7 +16,7 @@ export default function Footer() {
               <a href="mailto:info@saksenata.art" className="block text-sm text-gray-600 hover:text-gray-900 transition-colors">
                 E-mail
               </a>
-              <a href="#" className="block text-sm text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="https://www.instagram.com/saksenata/" className="block text-sm text-gray-600 hover:text-gray-900 transition-colors">
                 Instagram
               </a>
             </div>
