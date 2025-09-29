@@ -21,6 +21,9 @@ export default function Header() {
             <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors text-sm tracking-wide">
               Home
             </Link>
+            <Link href="/portfolio" className="text-gray-600 hover:text-gray-900 transition-colors text-sm tracking-wide">
+              Portfolio
+            </Link>
             <Link href="/gallery" className="text-gray-600 hover:text-gray-900 transition-colors text-sm tracking-wide">
               Gallery
             </Link>
@@ -54,6 +57,13 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
+              </Link>
+              <Link 
+                href="/portfolio" 
+                className="text-gray-600 hover:text-gray-900 transition-colors text-sm tracking-wide"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Portfolio
               </Link>
               <Link 
                 href="/gallery" 

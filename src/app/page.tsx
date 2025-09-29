@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import GallerySection from '../components/GallerySection';
+import PortfolioSection from '../components/PortfolioSection';
 import { artworks } from '../data/artworks';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -37,6 +38,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Portfolio Section */}
+        <PortfolioSection />
 
         {/* Featured Artworks */}
         <GallerySection 
