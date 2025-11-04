@@ -20,7 +20,7 @@ export default function PortfolioSection() {
       title: 'File Compressor & Watermarker',
       description:
         'A fast, private, in‑browser tool to compress files and add text watermarks. Client‑side only with Web Worker and pdf-lib.',
-      href: 'https://file-compressor-rho.vercel.app/',
+      href: 'https://file-watermarker-compressor.netlify.app/',
       badge: 'Live Demo',
       preview: { type: 'embed' },
     },
@@ -28,7 +28,7 @@ export default function PortfolioSection() {
       title: 'Meal Web – Menu & Ordering Preview',
       description:
         'A minimal restaurant/meal site demo focused on clean presentation and fast UX, deployed on Vercel.',
-      href: 'https://meal-web-sandy.vercel.app/',
+      href: 'https://meal-web-app.netlify.app/',
       badge: 'Live Demo',
       preview: { type: 'embed' },
     },
@@ -99,8 +99,8 @@ export default function PortfolioSection() {
 
         <div className="text-center mt-10">
           <p className="text-xs text-gray-500">
-            References: <a className="underline hover:text-gray-900" target="_blank" rel="noreferrer" href="https://github.com/saksenata/file-compressor">file-compressor</a> •
-            <a className="underline hover:text-gray-900 ml-1" target="_blank" rel="noreferrer" href="https://meal-web-sandy.vercel.app/">meal-web</a>
+            References: <a className="underline hover:text-gray-900" target="_blank" rel="noreferrer" href="https://file-watermarker-compressor.netlify.app/">file-compressor</a> •
+            <a className="underline hover:text-gray-900 ml-1" target="_blank" rel="noreferrer" href="https://meal-web-app.netlify.app/">meal-web</a>
           </p>
         </div>
       </div>
